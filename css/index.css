@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Main--Container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+/*H1{
+    font-family: ;
+    font-weight: ;
+}
+Buscar fuente y color para el background del input*/
+input::-webkit-input-placeholder {
+    padding-left: 20px;
+}
+  
+input::-webkit-input-placeholder::before {
+    content: ""; /* Código Unicode del icono */
+    font-family: "Font Awesome"; /* Reemplaza por la familia de fuentes de tu icono */
+    font-size: 16px; /* Ajusta el tamaño del icono */
+    color: #ccc; /* Ajusta el color del icono */
+    position: absolute;
+    left: 5px; /* Ajusta la posición horizontal del icono */
+    top: 50%; /* Centra el icono verticalmente */
+    transform: translateY(-50%);
+}
+input{
+    border-radius: 20px;
+    height: 28px;
+    /*background-color: ;*/
+    outline: none;
+    border: 1px solid gray;
+    justify-content: center;
+    width: 95%;
+    margin: 12px 0px;
+
+}
+
+.Products{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    overflow: scroll;
+}
+.Product{
+    margin-right: 12px;
+    width: 250px;
+    height: 200px;
+}
+.Product img{
+    width: 250px;
+    border-radius: 10px;
+    height: 150px;
+}
+.Product p{
+    font-weight: 700;
+    margin: 8px 0 0 0;
+}
+H2{
+    font-weight: 700;
+}
+.Products2{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    height: 120px;
+    width: 100%;
+}
+.Product2{
+    width: 150px;
+    height: 100px;
+    margin-right: 8px;
+}
+.Product2 img{
+    width: 150px;
+    border-radius: 20px;
+    height: 80px;
+}
+.Product2 p{
+    font-weight: 700;
+    margin: 8px 0 0 0;
+}
