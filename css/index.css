@@ -5,7 +5,7 @@ body{
     height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
-
+    overflow-x: hidden;
 }
 @media(max-width:550px) {
     .Products2{
@@ -14,26 +14,19 @@ body{
     .Products{
         overflow-x:hidden;
     }
-    .Product img:hover{
-        z-index: 3;
-        position: absolute;
-        transform: scale(1.5);
-    }
-    .Product2 img:hover{
-        z-index: 3;
-        position: absolute;
-        transform: scale(1.2);
-    }
 }
 .Main--Container{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-left: 10px;
+    overflow-x: hidden;
+
 }
 header{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 H1{
     font-weight: 500;
@@ -76,6 +69,7 @@ li{
 }
 a{
     text-decoration: none;
+    color: gray;
 }
 a:hover{
     text-decoration: underline;
@@ -161,4 +155,18 @@ H6{
 .enlace a:hover{
     color: blue;
     text-decoration: underline;
+}
+.cama img{
+    object-fit: cover;
+}
+.resultados a{
+    text-decoration: none;
+    color: grey;
+}
+.resultados a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.Product2 img{
+    object-fit: cover;
 }
