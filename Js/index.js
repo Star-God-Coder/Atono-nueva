@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
     producto.addEventListener("click", function(e) {
       e.preventDefault();
       const idProducto = this.id;
-      open(`./producto${idProducto}.html`);
+      window.location.href = `./producto${idProducto}.html`
     });
   });
 
