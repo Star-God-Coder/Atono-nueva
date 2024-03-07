@@ -4,7 +4,7 @@ body{
     padding: 0;
     width: 100%;
     height: 100vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     box-sizing: border-box;
     overflow-x: clip;
 }
