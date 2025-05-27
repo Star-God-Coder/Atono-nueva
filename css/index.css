@@ -8,15 +8,21 @@ body{
     box-sizing: border-box;
     overflow-x: clip;
 }
+
 @media(max-width:550px) {
     .Products2{
-        overflow-x:hidden;
+        overflow-x:clip;
     }
     .Products{
-        overflow-x:hidden;
+        overflow-x:clip;
     }
 }
-/* Estilo del loader */
+@media(min-width:550px) {
+    .footer-img{
+        display: none;
+    }
+}
+/* Estilo del loader */ 
 .loader {
   position: fixed;
   top: 0;
@@ -45,28 +51,31 @@ body{
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
+img{
+    object-fit: cover;
+}
 .Main--Container{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-left: 10px;
-    overflow-x: hidden;
+    overflow-x: clip;
 
 }
 header{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: clip;
 }
 H1{
-    font-weight: 500;
-    color: #B99470;
+    font-weight: 900;
+    color: #725a41;
+    font-size: 60px;
 }
 /*Buscar fuente y color para el background del input*/
 input::-webkit-input-placeholder {
-    padding-left: 20px;
-    color: #B99470;
+    margin-left: 20px;
+    color: #725a41;
     font-weight: 700;
 }
   
@@ -90,8 +99,9 @@ input{
     justify-content: center;
     width: 95%;
     margin: 12px 0px;
-    padding: 0;
+    padding-left: 20px;
 }
+
 ul img{
     max-width: 300px;
 }
@@ -100,7 +110,7 @@ li{
 }
 a{
     text-decoration: none;
-    color: gray;
+    color: rgb(192, 192, 192);
 }
 a:hover{
     text-decoration: underline;
@@ -131,6 +141,7 @@ a:hover{
 }
 H2{
     font-weight: 700;
+    text-align: center;
 }
 .Products2{
     display: flex;
@@ -154,14 +165,23 @@ H2{
     font-weight: 700;
     margin: 8px 0 0 0;
 }
-.footer{
-    display: line;
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-img{
+    width: 100%;
+    margin: 20px;
 }
 h6{
     font-size: medium;
 }
 .TP{
-    color: #B99470;
+    color: #725a41;
+    font-weight: 500;
+    font-size: 24px;
 }
 H6{
     text-align: center;
@@ -173,13 +193,28 @@ H6{
 }
 .whats{
     margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.insta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .enlace{
     display: flex;
     justify-content: space-around;
     margin-bottom: 12px;
 }
-.enlace a{
+.enlace div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enlace div a{
     color: gray;
     text-decoration: none;
 }
@@ -192,7 +227,7 @@ H6{
 }
 .resultados a{
     text-decoration: none;
-    color: grey;
+    color: rgb(192, 192, 192);
 }
 .resultados a:hover{
     color: blue;
@@ -200,4 +235,25 @@ H6{
 }
 .Product2 img{
     object-fit: cover;
+}
+.footer-div{
+    display: flex;
+    background-color: rgb(192, 192, 192);
+    margin: 20px;
+    border-radius: 20px;
+}
+.footer-div img{
+    width: 50%;
+    border-radius: 20px;
+    
+}
+.footer-div div{
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.footer-div div p{
+    margin: 10px;
 }
